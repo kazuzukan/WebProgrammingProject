@@ -1,0 +1,431 @@
+/*--------------------------------------------------------------------------------    
+                 Default VALUES :
+
+        FONT FAMILY     : Kano, Roboto Condensed
+        
+        Purple          : #551a8b
+
+=================================================================================*/
+
+html,
+body {
+    height: 100%;    
+}
+a {
+  color:rgb(169,169,169);
+}
+
+@font-face { 
+    font-family: Kano; 
+    src: url('Kano.otf'); 
+} 
+
+body {
+    font-weight: 300;
+    font-family: Kano, "Roboto Condensed", sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+.container, .col-sm-1, , .col-sm-8, , .col-sm-10 {
+/*    border: 1px solid black; */
+}
+
+
+.home, .schedule {
+    
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/HomePage/home-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.friendlist{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/FriendList/Component6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------                                       
+                                    Navbar
+=================================================================================*/
+
+.profile-pic-container, .name-container {
+    padding: 15px 0 0 10px;
+    
+}
+.profile-pic {
+    width: 80%;
+    cursor: pointer;
+}
+
+.home-title{
+    padding-top: 5px;
+}
+.notification-button{
+}
+.notif-button-container {
+    text-align : right;
+    padding : 0;
+}
+
+/*--------------------------------------------------------------------------------                                       
+                                    HOME
+=================================================================================*/
+
+.main-text-container {
+    padding: 0;
+}
+.main-text {
+    width: 50%;
+}
+
+.home-side-container {
+    padding: 0;
+    padding-left: 15px;
+    margin-top: 35px;
+}
+
+.home-side-bar1 {
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.home-side-bar {
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.home-side-bar1:hover, .home-side-bar:hover {
+    border-bottom: 1px solid #551a8b;
+}
+
+.icon-newevent, .icon-myschedule, .icon-personalization {
+    width: 85%;
+    height: 85%;
+}
+
+.icon-friends {
+    width: 60%;
+    height: 60%;
+}
+
+/*--------------------------------------------------------------------------------                                       
+                                    FriendList
+=================================================================================*/
+
+.friendicon {
+  width:  105px;
+  height: auto;
+  margin-left: 10px;
+}
+.friendicon-1{
+  width:  105px;
+  height: auto;
+  margin-left: 140px;
+}
+.friendicon-2{
+  width:  105px;
+  height: auto;
+  margin-left: 55px;
+}
+/*--------------------------------------------------------------------------------                                       
+                                    Schedule
+=================================================================================*/
+
+.schedule-logo {
+    width: 45px;
+}
+
+.schedule-title {
+    font-size : 35px;
+    text-shadow: 2px 4px 5px rgba(138,121,93,0.5);
+    margin : auto;
+}
+
+.add-event-container {
+    margin-top: 10px;;
+    padding: 0 50px;
+}
+
+.add-event {
+    padding-right: 20px;
+}
+
+.add-logo {
+    width: 40px;
+}
+
+.add-logo, .add-text {
+    cursor: pointer;
+}
+
+.all-event-container {
+}
+
+.event-container {
+    border: 1px solid aqua;
+    box-shadow: 6px 8px 8px rgba(138,121,93,0.5);
+}
+
+.event-title-container1 {
+    background-color: rgb(164, 188, 212);
+}
+
+.event-title-container2 {
+    background-color: rgb(206, 168, 168);
+}
+.event-title-container3 {
+    background-color: rgb(176, 206, 147);
+}
+.event-title-container4 {
+    background-color: #C4C4C4;
+}
+
+
+
+
+.event-title {
+    font-size : 20px;
+    text-shadow: 2px 4px 5px rgba(138,121,93,0.5);
+    margin: auto;
+}
+
+.event-content {
+    background-color: #f1f1f1;
+}
+
+.event-tanggal {
+    margin-top: 15px; 
+}
+
+.event-jam {
+    margin: 10px 0; 
+}
+
+.person-nama-container {
+    margin-bottom: 10px;
+}
+
+.table-person-nama td {
+    cursor: pointer;
+}
+
+.table-person-nama td:hover {
+    border-bottom: 1px solid #551a8b;
+}
+
+.event-container-box {
+    margin-top: 20px;
+}
+
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+	margin: auto;
+    /* padding: 20px; */
+    border: 1px solid #888;
+	width: 75%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reg-content{
+	width: 70%;
+}
+
+.inside-modal input[type=text],.inside-modal  input[type=date], .inside-modal  input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DAD1D1;
+    color: black;
+    border-radius: 10px;
+}
+
+.optionform {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DAD1D1;
+    color: black;
+    border-radius: 10px;
+}
+input[type=time]{
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DAD1D1;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.button{
+    max-width: 100%;
+	background-color: purple;
+	width: 310px;
+	height: 40px;	
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	color: white;
+}
+
+
+/* base grid border*/
+.col-1, .col-8, .col-2, .col-4, .row{
+    /* border: 1px solid black; */
+}
+
+.col-10{
+   border-left: 0.5px solid grey;
+}
+
+.login{
+   width: 100%;
+   height: 100%;
+   background-image: url(../img/LoginPage/Login-bg.png);
+}
+   
+.row{
+   width: 100%;
+   margin: 0;
+}
+/*left*/
+.left-container input[type=text], .left-container input[type=password ] {
+   width: 105%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: none;
+   background-color: #DAD1D1;
+   color: black;
+   border-radius: 10px;
+}
+
+
+.login-text-container{
+   margin-top: 7%;
+   margin-left: 10%;
+   font-size: 30px;
+}
+
+.base-container{
+
+}
+
+.img-icon {
+   margin: auto;
+}
+
+.img-box {
+   display: flex;
+   justify-content: center;
+}
+
+.content-box{
+   margin: 35px 0 0 0; 
+   padding: 0;
+}
+.col-12, .col-md-6 .left-container {
+   padding-right: 0;
+}
+
+.content2-box{
+/*	padding-left: 30%;*/
+   margin-top: 45px;
+}
+
+.content3-box{
+/*	padding-left: 30%;*/
+   text-align: center; 
+}
+
+.button{
+   max-width: 100%;
+   background-color: purple;
+   width: 310px;
+   height: 40px;	
+   text-align: center;
+   cursor: pointer;
+   display: inline-block;
+   color: white;
+}
+
+/*right*/
+.welcome-container{
+   padding-left: 20px;
+   padding-top: 50px;
+}
+.desc-container{
+   padding-left: 20px;
+}
+
+.welcome-text{
+   font-size: 35px;
+}
+
+.btn1{
+	background-color: transparent;
+	border: none;
+	color: palevioletred;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    color: purple;
+}
+
+.inside-modal{
+    /* s */
+    padding-bottom: 40px;
+}

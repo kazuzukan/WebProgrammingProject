@@ -1,0 +1,161 @@
+html,
+body {
+    height: 100%;
+    color: #64707b;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* base grid border*/
+.col-1, .col-8, .col-2, .col-4, .row{
+ 	 border: 1px solid black; 
+}
+
+.col-10{
+	border-left: 0.5px solid grey;
+}
+
+.login{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/LoginPage/Login-bg.png);
+}
+    
+.row{
+    width: 100%;
+	margin: 0;
+}
+ /*left*/
+input[type=text] {
+    width: 105%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DAD1D1;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.login-text-container{
+	margin-top: 7%;
+	margin-left: 10%;
+	font-size: 30px;
+}
+
+.base-container{
+
+}
+
+.img-icon {
+    margin: auto;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+}
+
+.content-box{
+	margin: 35px 0 0 0; 
+    padding: 0;
+}
+.col-12, .col-md-6 .left-container {
+    padding-right: 0;
+}
+
+.content2-box{
+/*	padding-left: 30%;*/
+	margin-top: 45px;
+}
+
+.content3-box{
+/*	padding-left: 30%;*/
+	text-align: center; 
+}
+
+.button{
+    max-width: 100%;
+	background-color: purple;
+	width: 310px;
+	height: 40px;	
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	color: white;
+}
+
+/*right*/
+.welcome-container{
+	padding-left: 20px;
+	padding-top: 50px;
+}
+.desc-container{
+	padding-left: 20px;
+}
+
+.welcome-text{
+	font-size: 35px;
+}
+
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+	margin: auto;
+    /* padding: 20px; */
+    border: 1px solid #888;
+	width: 20%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn1{
+	background-color: transparent;
+	border: none;
+	color: palevioletred;
+	padding: 0;
+}
+
+.btn1:hover{
+	color: white;
+}
+
+.inside-modal{
+    margin-left: 35px;
+    padding-bottom: 40px;
+}
+.reg-content{
+	width: 80%;
+}
